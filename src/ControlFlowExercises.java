@@ -7,12 +7,18 @@ public class ControlFlowExercises {
 //            System.out.println("i = " + i);
 //            i -=
 //        } while (i >= 0);
-            int i = 2;
-        do {
-            System.out.println(i);
-            i *= Math.pow(i, 1);
-
-
-        }while(i <= 1000000);
+//            int i = 2;
+//        do {
+//            System.out.println(i);
+//            i *= Math.pow(i, 1);
+//
+//
+//        }while(i <= 1000000);
+//        for(byte i = 100; i >= 0;i -=5 ){
+//            System.out.println("i = " + i);
+//        }
+        for(int i = 2; i <= 1000000; i *=Math.pow(i, 1)){
+            System.out.println("i = " + i);
+        }
     }
 }
