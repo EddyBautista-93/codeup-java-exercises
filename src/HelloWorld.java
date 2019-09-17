@@ -1,3 +1,8 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args){
 //        System.out.println("Hello, World");
@@ -53,15 +58,41 @@ public class HelloWorld {
 //        int y = 4;
 //            y *= x;
 //        System.out.println(y);
-        int x = 10;
-        int y = 2;
-         x /= y;
-        y -= x;
-        System.out.println(y);
+//        int x = 10;
+//        int y = 2;
+//         x /= y;
+//        y -= x;
+//        System.out.println(y);
 
 
-//        14.
+//
 //        you get a random number that overflows
+//        double pi = 3.14159;
+//        System.out.format("The Value of pi is approximately %.2f ", pi);
+        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter a number");
+//        int userInput = scanner.nextInt();
+//        System.out.println(userInput);
+//        System.out.println("Enter three words");
+//        String userWordOne = scanner.nextLine();
+//        String userWordTwo = scanner.nextLine();
+//        String userWordThree = scanner.nextLine();
+//        System.out.println(userWordOne);
+//        System.out.println(userWordTwo);
+//        System.out.println(userWordThree);
+//        System.out.println("Enter a sentence");
+//        String sent = scanner.nextLine();
+//        System.out.println(sent);
+        System.out.println("Enter the length and the width of the classroom");
+        String widthString = scanner.nextLine();
+         String lengthString = scanner.nextLine();
+
+         int width = Integer.parseInt(widthString);
+         int length = Integer.parseInt(lengthString);
+
+        System.out.println(width * length);
+
+
 
     }
 }
