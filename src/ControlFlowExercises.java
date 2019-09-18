@@ -31,12 +31,16 @@ public class ControlFlowExercises {
 //                System.out.println("i = " + i);
 //            }
 //        }
-//        System.out.println("Enter a int");
+//
+//        String yesNO = "y";
+//
+//        while(yesNO.equalsIgnoreCase("y")){
 //        int i = input.nextInt();
 //        System.out.println("Enter a Intger");
 //        int startValue = 1;
 //        int inc = input.nextInt();
-//
+////        System.out.println("number | squared | cubed");
+////        System.out.println("------ | ------- | -----");
 //        for (int row =0; row < inc; row++) {
 //            int y = 1;
 //
@@ -50,8 +54,40 @@ public class ControlFlowExercises {
 //
 //            System.out.println();
 //            startValue++;
+//            }
+//
+//            System.out.println("Would you like to test another number Y/N");
+//
+//
+//
+//        yesNO = input.nextLine();
+//
 //        }
 
+//        String yesNO = "y";
+//
+//        while(yesNO.equalsIgnoreCase("y")){
+//            System.out.println("Enter a number");
+//            int answer = Integer.parseInt(input.nextLine());
+//            System.out.println("Heres your table");
+//
+//            for(int counter = 1; counter <= answer; counter++){
+//                System.out.println(String.format("%-6d | %-7d | %-6d", counter, (int)Math.pow(counter, 2), (int)Math.pow(counter, 3)));
+//            }
+//            System.out.println("Would you like to test another number y/n");
+//            yesNO = input.nextLine();
+//
+//        }
+
+            int grade = Integer.parseInt(input.nextLine());
+        System.out.println("Enter yout grade");
+            if(grade <= 100 && grade >= 88){
+                System.out.println("A");
+        } else if(grade <= 87 && grade >= 80){
+                System.out.println("B");
+            }else if(grade <= 79 && grade >= 70){
+                System.out.println("C");
+            }
 
 
     }
