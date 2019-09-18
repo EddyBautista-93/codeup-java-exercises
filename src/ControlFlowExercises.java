@@ -33,24 +33,24 @@ public class ControlFlowExercises {
 //        }
 //        System.out.println("Enter a int");
 //        int i = input.nextInt();
-        System.out.println("Enter a Intger");
-        int startValue = 1;
-        int inc = input.nextInt();
-
-        for (int row =0; row < inc; row++) {
-            int y = 1;
-
-            for (int col = startValue; col < startValue + 3; col++) {
-
-                y = y * startValue;
-                System.out.print(y + " ");
-
-            }
-
-
-            System.out.println();
-            startValue++;
-        }
+//        System.out.println("Enter a Intger");
+//        int startValue = 1;
+//        int inc = input.nextInt();
+//
+//        for (int row =0; row < inc; row++) {
+//            int y = 1;
+//
+//            for (int col = startValue; col < startValue + 3; col++) {
+//
+//                y = y * startValue;
+//                System.out.print(y + " ");
+//
+//            }
+//
+//
+//            System.out.println();
+//            startValue++;
+//        }
 
 
 
