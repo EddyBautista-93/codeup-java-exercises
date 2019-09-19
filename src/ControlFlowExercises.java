@@ -78,16 +78,19 @@ public class ControlFlowExercises {
 //            yesNO = input.nextLine();
 //
 //        }
+//
+//            int grade = Integer.parseInt(input.nextLine());
+//        System.out.println("Enter yout grade");
+//            if(grade <= 100 && grade >= 88){
+//                System.out.println("A");
+//        } else if(grade <= 87 && grade >= 80){
+//                System.out.println("B");
+//            }else if(grade <= 79 && grade >= 70){
+//                System.out.println("C");
+//            }
+//
+//        atcat
 
-            int grade = Integer.parseInt(input.nextLine());
-        System.out.println("Enter yout grade");
-            if(grade <= 100 && grade >= 88){
-                System.out.println("A");
-        } else if(grade <= 87 && grade >= 80){
-                System.out.println("B");
-            }else if(grade <= 79 && grade >= 70){
-                System.out.println("C");
-            }
 
 
     }
