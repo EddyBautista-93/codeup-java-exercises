@@ -3,13 +3,17 @@ import java.util.Scanner;
 public class MethodsExercises {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 //        System.out.println(addition(5, 3));
 //        System.out.println(subtraction(10, 5));
 //        System.out.println(multply(5, 4));
 //        System.out.println(div(10, 2));
 //        System.out.println(modulus(2,3));
 //        System.out.println(multiplyNoOp(10,10));
-        System.out.println(getInteger(0,10));
+//        System.out.println(getInt(0,10));
+//        System.out.println(factorial());
+        rollDice();
+
 
     }
 
@@ -31,22 +35,96 @@ public class MethodsExercises {
 //    }
 //    public static int multiplyNoOp(int x, int y){
 //        if(y == 0){
-//            return 0;®
+//            return 0;
 //        }
 //        return (x + multiplyNoOp(x, y - 1));
 //    }
-        public static int getInteger(int min, int max){
 
-            System.out.print("Enter a number between 1 and 10: ");
-            Scanner input = new Scanner(System.in);
+//    hasNextInt
+//public static int getInt(int min, int max) {
+//        Scanner sc = new Scanner(System.in);
+////        values are set in the called method in the main class
+//        System.out.println("Please enter a number between " + min + " and " + max);
+////        CHecks to see if it is a integer
+//        if (sc.hasNextInt()) {
+////            makes the scanner class a int variable
+//            int userNum = sc.nextInt();
+////            nested if else if it is a intger
+//            if (userNum >= min && userNum <= max) {
+//                return userNum;
+//            } else {
+//                System.out.println("Number out of range!");
+//                return getInt(min, max);
+//            }
+//        } else {
+//            System.out.println("Invalid input!");
+//            getInt(min, max);
+//        }
+//        return 0;
+//    }
+//    public static long factorial(){
+//       Scanner input = new Scanner(System.in);
+//            System.out.println("enter a number between 1-10");
+//            int number = input.nextInt();
+//            int startValue = 1;
+//            String middleString = "";
+//
+//            for (int i = 1; i <= number; i++) {
+//                startValue *= i;
+//                if (middleString.isEmpty()) {
+//                    middleString += i;
+//                } else {
+//                    middleString += " X " + i;
+//                }
+//                System.out.println(i + "! = " + middleString + " = " + startValue);
+//            }
+//        System.out.println("Would you like to continue? {y/n}");
+//            String yesNO = input.nextLine();
+//            if(yesNO.equalsIgnoreCase("y")){
+//                factorial()
+//            }
+//            return 0;
+//
+//    }
+//    public static long factorial(){
+//        String yesNo = "Y";
+//        while(yesNo.equalsIgnoreCase("y")){
+//            System.out.println("Enter a number between 1 - 10");
+//            Scanner input = new Scanner(System.in);
+//            int number = input.nextInt();
+//            int startValue = 1;
+//            String middleString = "";
+//
+//            for(int i = 1;i <= number; i++){
+//                startValue *= i;
+//                if(middleString.isEmpty()){
+//                    middleString += i;
+//                }else{
+//                    middleString += " x " + i;
+//                }
+//                System.out.println(i + " ! = " + middleString + " = " + startValue);
+//            }
+//        System.out.println("would you like to continue");
+//        Scanner userContinue = new Scanner(System.in);
+//        yesNo = userContinue.nextLine();
+//            return 0;
+//        }
+//        return 0;
+//    }
 
-            int numInput =input.nextInt();
-            if(numInput<= max && numInput >= min){
-                System.out.println(numInput+" is correct");
-            } else{
-                System.out.println(numInput + " is to far heres the max");
-                getInteger(min, max);
-            }
-            return numInput;
-        }
+    public static void rollDice(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter how many sides for each dice");
+        int diceSides = input.nextInt();
+
+        int diceOne =(int) (diceSides*Math.random()+1);
+        int diceTwo =(int) (diceSides*Math.random()+1);
+
+        System.out.println("The first dice is = " + diceOne);
+        System.out.println("The Second dice is = " + diceTwo);
+
+
+    }
+
+
 }
