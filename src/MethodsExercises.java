@@ -1,3 +1,4 @@
+import javax.annotation.processing.SupportedSourceVersion;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -12,7 +13,9 @@ public class MethodsExercises {
 //        System.out.println(multiplyNoOp(10,10));
 //        System.out.println(getInt(0,10));
 //        System.out.println(factorial());
-        rollDice();
+//        rollDice();
+//        higLow();
+//        guessTheNumber();
 
 
     }
@@ -84,7 +87,7 @@ public class MethodsExercises {
 //                factorial()
 //            }
 //            return 0;
-//
+
 //    }
 //    public static long factorial(){
 //        String yesNo = "Y";
@@ -112,19 +115,85 @@ public class MethodsExercises {
 //        return 0;
 //    }
 
-    public static void rollDice(){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter how many sides for each dice");
-        int diceSides = input.nextInt();
+//    public static void rollDice(){
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter how many sides for each dice");
+//        int diceSides = input.nextInt();
+//
+//        int diceOne =(int) (diceSides*Math.random()+1);
+//        int diceTwo =(int) (diceSides*Math.random()+1);
+//
+//        System.out.println("The first dice is = " + diceOne);
+//        System.out.println("The Second dice is = " + diceTwo);
+//
+//
+//    }
+//    public static int ranInt(){
+//        double randomTarget = Math.random();
+//        double x = randomTarget * 100;
+//        int randomInt = (int)x;
+//        return randomInt;
+//    }
 
-        int diceOne =(int) (diceSides*Math.random()+1);
-        int diceTwo =(int) (diceSides*Math.random()+1);
 
-        System.out.println("The first dice is = " + diceOne);
-        System.out.println("The Second dice is = " + diceTwo);
+//    public static void higLow(){
+//        ranInt();
+//        Scanner input = new Scanner(System.in);
+//        //random number generator 1-100
+//
+////        System.out.println("randomInt = " + randomInt);
+//        System.out.println("Enter a number from 1-100");
+//        int usersNumber = input.nextInt();
+//        if(usersNumber < randomInt){
+//            System.out.println("Too Low, the number was " + randomInt);
+//        } else if( usersNumber > randomInt){
+//            System.out.println("To high the number was " + randomInt);
+//        } else{
+//            System.out.println("You got it! the number is " + randomInt);
+//        }
+//
+//    }
 
-
-    }
+//    public static double getRandomIntegerBetweenRange(double min, double max){
+//        double number = (int)(Math.random()*((max-min)+1))+min;
+//        return number;
+//    }
+//
+//    public static void guessTheNumber () {
+//        Scanner guessed = new Scanner(System.in);
+//        double num = (int) getRandomIntegerBetweenRange(1, 100);
+//        System.out.println("Please guess the random number between 1 and 100");
+//        int secondResponse = guessed.nextInt();
+//        int guessCount = 1;
+//        int guessLimit = 3;
+//        boolean outOfGuesses = false;
+//
+//        while (secondResponse != num) {
+//            if (guessCount < guessLimit) {
+//                if (secondResponse < num) {
+//                    System.out.println("HIGHER!");
+//                    System.out.println("Guess again");
+//                    secondResponse = guessed.nextInt();
+//                    guessCount++;
+//
+//                } else if (secondResponse > num) {
+//                    System.out.println("LOWER!");
+//                    System.out.println("Guess again");
+//                    secondResponse = guessed.nextInt();
+//                    guessCount++;
+//
+//                }
+//            } else {
+//                outOfGuesses = true;
+//                System.out.println("Sorry! You ran out of guesses. The Correct number is "+num );
+//                break;
+//            }
+//        }
+//
+//        if (secondResponse == num) {
+//            System.out.println("Correct, Good Guess.");
+//        }
+//    }
 
 
 }
