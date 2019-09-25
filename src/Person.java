@@ -12,14 +12,16 @@ public class Person {
 
     // prints a message to the console using the person's name
     public void sayHello(){
-        System.out.printf("Hello my name is %s",name);
+        System.out.println("Hello" + this.getName());
     }
     public Person(String wN){
-        this.name = wN;
+//        this.name = wN;
+        setName(wN);
     }
 
     public static void main(String[] args) {
         Person eddy = new Person("eddy");
+
 
 //        eddy.sayHello();
 //        eddy.setName("eddy");

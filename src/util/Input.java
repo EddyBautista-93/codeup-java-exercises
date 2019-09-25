@@ -9,37 +9,47 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-String getString(){
+public String getString(){
     System.out.println("Enter a Sentence");
     return this.scanner.nextLine();
 }
 
-Boolean yesNO(){
+public Boolean yesNO(){
     System.out.println("[Y/N}");
-    if(this.scanner.nextLine().equalsIgnoreCase("y")){
+    if(getString().equalsIgnoreCase("y")){
         return true;
     } else{
         return false;
     }
 }
 
-int getInt(int min, double max){
-        min = this.scanner.nextInt();
-                max = this.scanner.nextInt();
-                return min;
+public int getInt(int min, int max){
+    int number = getInt();
+    if(number >= min && number <= max){
+        return number;
+    } else{
+        System.out.println("out of range");
+        return getInt(min, max);
+    }
 }
 
-int getInt(){
-        return this.scanner.nextInt();
+public int getInt(){
+    System.out.println("Give me a number");
+        return Integer.parseInt(this.scanner.nextLine());
 }
 
-double getDouble(double min, double max){
-         min = this.scanner.nextDouble();
-         max = this.scanner.nextDouble();
-         return max;
+public double getDouble(double min, double max){
+    double number = getDouble();
+    if(number >= min && number <= max){
+        return number;
+    } else{
+        System.out.println("out of range");
+        return getDouble(min, max);
+    }
 }
 double getDouble(){
-        return this.scanner.nextDouble();
+    System.out.println("GIve me a Decimal : ");
+        return Double.parseDouble(this.scanner.nextLine());
 }
 
 
