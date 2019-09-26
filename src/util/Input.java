@@ -10,7 +10,7 @@ public class Input {
     }
 
 public String getString(){
-    System.out.println("Enter a Sentence");
+//    System.out.println("Enter a Sentence");
     return this.scanner.nextLine();
 }
 
@@ -47,7 +47,7 @@ public double getDouble(double min, double max){
         return getDouble(min, max);
     }
 }
-double getDouble(){
+public double getDouble(){
     System.out.println("GIve me a Decimal : ");
         return Double.parseDouble(this.scanner.nextLine());
 }

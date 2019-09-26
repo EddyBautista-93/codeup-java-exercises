@@ -10,16 +10,11 @@ public class Circle {
     }
 
 public double getArea(){
-       return (this.radius * Math.PI) * radius;
+    return  Math.PI * (Math.pow(this.radius, 2));
 }
     public double getCircumference(){
-        return 2 * Math.PI * this.radius;
+        return Math.PI * 2 * this.radius;
     }
 
-    public static void main(String[] args) {
-        Circle x = new Circle(6);
-        System.out.println(x.getArea());
-        System.out.println(x.getCircumference());
-    }
 }
 
