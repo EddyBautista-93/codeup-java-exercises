@@ -14,6 +14,16 @@ public String getString(){
     return this.scanner.nextLine();
 }
 
+    public String getString(String prompt){
+        if (prompt.isEmpty()){
+            System.out.println("Enter something:");
+        }else {
+            System.out.println(prompt);
+        }
+
+        return getString(); //returns the scanner.nextLine()
+    }
+
 public Boolean yesNO(){
     System.out.println("[Y/N}");
     if(getString().equalsIgnoreCase("y")){
@@ -33,12 +43,25 @@ public int getInt(int min, int max){
     }
 }
 
-public int getInt(){
-    System.out.println("Give me a number");
-        return Integer.parseInt(this.scanner.nextLine());
-}
+//public int getInt(){
+//    System.out.println("Give me a number");
+//        return Integer.parseInt(this.scanner.nextLine());
+//}
 
-public double getDouble(double min, double max){
+    public int getInt() {
+        int number;
+        try {
+            number = Integer.valueOf(getString("Enter a number"));
+        }catch(Exception e){
+            System.out.println("invalid input! ");
+            e.printStackTrace();
+            return getInt();
+        }
+        return number;
+    }
+
+
+    public double getDouble(double min, double max){
     double number = getDouble();
     if(number >= min && number <= max){
         return number;
@@ -48,8 +71,15 @@ public double getDouble(double min, double max){
     }
 }
 public double getDouble(){
-    System.out.println("GIve me a Decimal : ");
-        return Double.parseDouble(this.scanner.nextLine());
+    double number;
+    try {
+        number = Integer.valueOf(getString("Enter a number"));
+    }catch(Exception e){
+        System.out.println("invalid input! ");
+        e.printStackTrace();
+        return getInt();
+    }
+    return number;
 }
 
 

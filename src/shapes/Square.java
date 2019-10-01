@@ -1,28 +1,28 @@
 package shapes;
 
 public class Square extends Quadrilateral{
-    public Square(double length, double width) {
-        super(length, width);
+    public Square(double side) {
+        super(side, side);
     }
 
     @Override
     public double setLength() {
-        return this.length;
+        return super.length;
     }
 
     @Override
     public double setWidth() {
-        return this.width;
+        return super.width;
     }
 
     @Override
     public double getPerimeter() {
-        return 4 * this.length;
+        return 4 * super.length;
     }
 
     @Override
     public double getArea() {
-        return this.length * this.width;
+        return super.length * super.width;
     }
 }
 
