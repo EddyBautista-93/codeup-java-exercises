@@ -8,6 +8,8 @@ public class HelloWorld {
 //        System.out.println("Hello, World");
 //        1.
 //        int myFavoriteNumber = 25;
+        int myFavoriteNumber = 24;
+        System.out.println(myFavoriteNumber);
 //        2.
 //        String myString = "Hello from ceres";
 //        System.out.println(myString);
@@ -83,14 +85,14 @@ public class HelloWorld {
 //        System.out.println("Enter a sentence");
 //        String sent = scanner.nextLine();
 //        System.out.println(sent);
-        System.out.println("Enter the length and the width of the classroom");
-        String widthString = scanner.nextLine();
-         String lengthString = scanner.nextLine();
-
-         int width = Integer.parseInt(widthString);
-         int length = Integer.parseInt(lengthString);
-
-        System.out.println(width * length);
+//        System.out.println("Enter the length and the width of the classroom");
+//        String widthString = scanner.nextLine();
+//         String lengthString = scanner.nextLine();
+//
+//         int width = Integer.parseInt(widthString);
+//         int length = Integer.parseInt(lengthString);
+//
+//        System.out.println(width * length);
 
 
 

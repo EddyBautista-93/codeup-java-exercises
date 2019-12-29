@@ -19,6 +19,9 @@ public class Person {
         setName(wN);
     }
 
+    public Person() {
+    }
+
     public static void main(String[] args) {
         Person eddy = new Person("eddy");
 
